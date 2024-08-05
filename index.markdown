@@ -5,9 +5,18 @@
 layout: default
 title: Arduino Basics
 ---
-# Initializing Inputs 
+# Initializing Input Pins 
 
-## Setting Up Input Pins
+# Reading a Signal 
+Whenever you set up a new sensor the first thing you'll need to do is make sure you can read the signal from the pin that it's connected on. 
+
+Pretend you have a potentiometer set up on Pin A2. Rearrange the blocks below so they initialize the pin as an input, and you read and print the value from the potentiometer pin. 
+
+
+
+# Initializing Outputs 
+
+## Blinky LED 
 Re-arrange the blocks below so they blink an LED (light) that is hooked up to pin 10 
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
