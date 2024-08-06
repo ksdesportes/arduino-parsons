@@ -50,6 +50,7 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
 
 ## Reading & Printing a Potentiometer Low Level 
 Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
+
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
