@@ -51,12 +51,12 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
 ## Reading & Printing a Potentiometer Low-Level 
 Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
 
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+<div id="Low-Level Pot Read-sortableTrash" class="sortable-code"></div> 
+<div id="Low-Level Pot Read-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="Low-Level Pot Read-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Low-Level Pot Read-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -70,7 +70,7 @@ Whenever you write up the setup and loop functions you need to make sure to open
     "    // print out the value you read\n    Serial.println(potValue);\n" +
     "}";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "Low-Level Pot Read-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -81,18 +81,18 @@ Whenever you write up the setup and loop functions you need to make sure to open
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#Low-Level Pot Read-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#Low-Level Pot Read-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
 
-## Blinky LED 
+<!-- ## Blinky LED 
 Re-arrange the blocks below so they blink an LED (light) that is hooked up to pin 10 
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
@@ -132,7 +132,7 @@ Re-arrange the blocks below so they blink an LED (light) that is hooked up to pi
   }); 
 })(); 
 </script>
-
+ -->
 
 ## Parsons 2 (Variable Check Grader)
 Construct a program that swaps the values of variables <code>x</code> and <code>y</code> using the helper variable <code>tmp</code>. You can change the names of the variables (<span class="jsparson-toggle"></span>) by clicking them.
