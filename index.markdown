@@ -12,13 +12,13 @@ Whenever you set up a new sensor the first thing you'll need to do is make sure 
 
 Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so they initialize the pin as an input, and you read and print the value from the potentiometer pin. 
 
-## Reading & Printing a Potentiometer Simple 
-<!-- <div id="High-Level Pot Read-sortableTrash" class="sortable-code"></div> 
-<div id="High-Level Pot Read-sortable" class="sortable-code"></div> 
+## Simple 
+<!-- <div id="HighPotRead-sortableTrash" class="sortable-code"></div> 
+<div id="HighPotRead-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="High-Level Pot Read-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="High-Level Pot Read-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="HighPotRead-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="HighPotRead-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -26,7 +26,7 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
     "void setup() {\n    // initialize serial communication at 9600 bits per second:\n    Serial.begin(9600);\n    // Set the pot pin as an input\n    pinMode(POT_PIN, INPUT);\n}\n" +
     "void loop() {\n    // Read value on the potentiometer pin\n    potValue = analogRead(POT_PIN);\n    // print out the value you read\n    Serial.println(potValue);\n}";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "High-Level Pot Read-sortable",
+    "sortableId": "HighPotRead-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -37,11 +37,11 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#High-Level Pot Read-newInstanceLink").click(function(event){ 
+  $("#HighPotRead-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#High-Level Pot Read-feedbackLink").click(function(event){ 
+  $("#HighPotRead-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
@@ -49,14 +49,14 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
 </script> -->
 
 ## Reading & Printing a Potentiometer Complex
-Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
+Whenever you write up the setup and loop functions you need to make sure to open & close the brackets. 
 
-<div id="Low-Level Pot Read-sortableTrash" class="sortable-code"></div> 
-<div id="Low-Level Pot Read-sortable" class="sortable-code"></div> 
+<div id="LowPotRead-sortableTrash" class="sortable-code"></div> 
+<div id="LowPotRead-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="Low-Level Pot Read-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="Low-Level Pot Read-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="LowPotRead-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="LowPotRead-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -70,7 +70,7 @@ Whenever you write up the setup and loop functions you need to make sure to open
     "    // print out the value you read\n    Serial.println(potValue);\n" +
     "}";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "Low-Level Pot Read-sortable",
+    "sortableId": "LowPotRead-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -81,11 +81,11 @@ Whenever you write up the setup and loop functions you need to make sure to open
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#Low-Level Pot Read-newInstanceLink").click(function(event){ 
+  $("#LowPotRead-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#Low-Level Pot Read-feedbackLink").click(function(event){ 
+  $("#LowPotRead-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
