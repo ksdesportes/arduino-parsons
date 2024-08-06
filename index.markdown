@@ -13,7 +13,7 @@ Whenever you set up a new sensor the first thing you'll need to do is make sure 
 Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so they initialize the pin as an input, and you read and print the value from the potentiometer pin. 
 
 ## Reading & Printing a Potentiometer Simple 
-<div id="High-Level Pot Read-sortableTrash" class="sortable-code"></div> 
+<!-- <div id="High-Level Pot Read-sortableTrash" class="sortable-code"></div> 
 <div id="High-Level Pot Read-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
@@ -46,7 +46,7 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
-</script>
+</script> -->
 
 ## Reading & Printing a Potentiometer Complex
 Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
