@@ -12,21 +12,21 @@ Whenever you set up a new sensor the first thing you'll need to do is make sure 
 
 Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so they initialize the pin as an input, and you read and print the value from the potentiometer pin. 
 
-## Reading & Printing a Potentiometer High-Level 
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+## Reading & Printing a Potentiometer Simple 
+<div id="High-Level Pot Read-sortableTrash" class="sortable-code"></div> 
+<div id="High-Level Pot Read-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="High-Level Pot Read-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="High-Level Pot Read-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "int POT_PIN = A1; // variable indicating where pot is plugged in\nint potValue = 0; // variable for reading the potentiometer\n" +
-    "void setup() {\n    // initialize serial communication at 9600 bits per second:\n    Serial.begin(9600);\n    // Set the pot pin as an input\n    pinMode(POT_PIN, INPUT); \n}\n" +
+    "void setup() {\n    // initialize serial communication at 9600 bits per second:\n    Serial.begin(9600);\n    // Set the pot pin as an input\n    pinMode(POT_PIN, INPUT);\n}\n" +
     "void loop() {\n    // Read value on the potentiometer pin\n    potValue = analogRead(POT_PIN);\n    // print out the value you read\n    Serial.println(potValue);\n}";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "High-Level Pot Read-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -37,18 +37,18 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#High-Level Pot Read-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#High-Level Pot Read-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
 
-## Reading & Printing a Potentiometer Low-Level 
+## Reading & Printing a Potentiometer Complex
 Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
 
 <div id="Low-Level Pot Read-sortableTrash" class="sortable-code"></div> 
