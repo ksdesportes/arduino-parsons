@@ -12,7 +12,7 @@ Whenever you set up a new sensor the first thing you'll need to do is make sure 
 
 Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so they initialize the pin as an input, and you read and print the value from the potentiometer pin. 
 
-## Reading & Printing a Potentiometer High Level 
+## Reading & Printing a Potentiometer High-Level 
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -48,7 +48,7 @@ Pretend you have a potentiometer set up on Pin A1. Rearrange the blocks below so
 })(); 
 </script>
 
-## Reading & Printing a Potentiometer Low Level 
+## Reading & Printing a Potentiometer Low-Level 
 Whenever you write up the setup and loop functions you need to make sure to open & close the brackets 
 
 <div id="sortableTrash" class="sortable-code"></div> 
